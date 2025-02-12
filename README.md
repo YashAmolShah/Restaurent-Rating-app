@@ -17,24 +17,18 @@ The **Restaurant Rating App** is a RESTful API built using **Spring Boot**, allo
 
 ---
 
+
+
 ## 🔧 API Endpoints
+- **Add Restaurant:** `POST /Restaurant/add`
+- **Add Customer:** `POST /Customer/add`
+- **Add Rating:** `POST /Rating/{customerId}/add/{restaurantName}`
+- **Get All Ratings:** `GET /ratings`
+- **Get All Customers:** `GET /customers`
+- **Get Customers by Restaurant:** `GET /customers/restaurant/{restaurantName}`
+- **Get Customers by Rating:** `GET /customers/restaurant/{restaurantName}/{rating}`
+- **Get Restaurant Average Rating:** `GET /restaurant/{restaurantName}/average`
 
-### **📌 Customer APIs**
-- **Add a new customer:**  
-  ```http
-POST /Customer/add
-
-GET /customers
-
-GET /customers/restaurant/{restaurantName}
-
-GET /customers/restaurant/{restaurantName}/{rating}
-
-POST /Restaurant/add
-
-GET /restaurant/{restaurantName}/average
-
-POST /Rating/{customerId}/add/{restaurantName}
 
 
 🛠 Tech Stack
